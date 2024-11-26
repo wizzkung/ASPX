@@ -48,7 +48,7 @@ namespace WebApplication1
             string[] parts = TextBox1.Text.Split(' ');
 
             if (parts.Length == 3 &&
-                double.TryParse(parts[2], out _secondNumber)) // Получаем второе число
+                double.TryParse(parts[2], out _secondNumber))
             {
                 double result = 0;
                 switch (_operation)
@@ -70,8 +70,7 @@ namespace WebApplication1
                         return;
                 }
 
-                TextBox1.Text = result.ToString(); // Отображаем результат
-                _firstNumber = 0;
+                TextBox1.Text = result.ToString(); 
                 _secondNumber = 0;
                 _operation = string.Empty;
                 _isResultDisplayed = true;
